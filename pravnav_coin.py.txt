@@ -1,4 +1,4 @@
-### PravnavCOIN Blockchain###
+### BlitzCOIN Blockchain###
 
 import hashlib, time
 
@@ -124,7 +124,7 @@ class BlockChain:
 
 blockchain = BlockChain()
 
-print("***Mining PravnavCOIN about to start***")
+print("***Mining BlitzCOIN about to start***")
 print(blockchain.chain)
 
 last_block = blockchain.last_block
@@ -148,5 +148,5 @@ blockchain.new_data(
 last_hash = last_block.calculate_hash
 block = blockchain.construct_block(proof_no, last_hash)
 
-print("***Mining PravnavCOIN has been successful***")
+print("***Mining BlitzCOIN has been successful***")
 print(blockchain.chain)
